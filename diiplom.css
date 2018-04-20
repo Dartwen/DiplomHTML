@@ -1,0 +1,519 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 1400px;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.diploma-lending{
+    position: relative;
+    min-height: 100%;
+    height: auto;
+}
+.background{
+    width: 100%;
+    background: url(http://i.cubeupload.com/MFK4ei.jpg) no-repeat left top/cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    max-width: 1400px;
+
+}
+.header{
+    font-size: 0;
+    padding-top: 40px;
+    }
+.logo {
+    display: inline-block;
+    width: 20%;
+    font-size: 10px;
+    vertical-align: middle;
+
+}
+
+.logo1 {
+    font-weight: normal;
+    font-size: 360%;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: 'Cookie', sans-serif;
+    margin-left: 15px;
+}
+
+.logo1 span {
+    font-size: 100%;
+    color: rgb(254, 209, 54);
+
+}
+
+nav {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+    text-align: right;
+    font-size: 10px;
+    vertical-align: middle;
+
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li {
+    display: inline-block;
+
+}
+
+nav ul li .menu {
+    font-size: 140%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 41px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.header, .information, .service, .about-us{
+    display: block;
+    max-width: 940px;
+    margin: auto;
+    width: auto;
+}
+.information {
+    padding-top: 210px;
+    padding-bottom: 170px;
+    margin-left: 247px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.information h1 {
+    font-size: 450%;
+    font-family: 'Vollkorn', sans-serif;
+    color: white;
+    margin-bottom: -62px;
+    margin-left: -75px;
+}
+
+.information p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 750%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    margin-right: 70px;
+    letter-spacing: -3px;
+    margin-bottom: 55px;
+
+
+}
+
+.information .button {
+    font-size: 180%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background: rgb(254, 209, 54);
+    padding: 25px 49px 27px 49px;
+    margin-right: 90px;
+
+}
+
+.button:hover {
+    background: rgb(254, 239, 84);
+}
+
+.button:active {
+    background: rgb(254, 209, 54);
+}
+
+.service, .portfolio, .about-us{
+    max-width: 1400px;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 10px;
+}
+.h3caption{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    font-size: 400%;
+    line-height: 0;
+    letter-spacing: -3px;
+    margin-bottom: 45px;
+
+}
+.p-caption{
+    font-family: 'Vollkorn', sans-serif;
+    color: rgb(119, 119, 119);
+    font-size: 200%;
+    line-height: 0;
+
+}
+.three-pictures{
+    text-align: center;
+    max-width: 940px;
+    font-size: 0;
+    margin: 0 auto;
+    padding: 80px 0 120px 0;
+}
+
+.picture1, .picture2, .picture3 {
+    display: inline-block;
+    width: 33.33%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.picture1 h3, .picture2 h3, .picture3 h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+    letter-spacing: 0;
+}
+.picture1 p, .picture2 p, .picture3 p{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0;
+    padding: 0 25px 0 25px;
+    font-size: 12px;
+    line-height:  1.5;
+    color: rgb(119, 119, 119);
+}
+.icon{
+    display: block;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 73px;
+    background: url(http://i.cubeupload.com/sIKDjw.png) no-repeat;
+  }
+.icon1{
+    background-position: 0 0;
+    width: 77px;
+    margin-left: 120px;
+}
+.icon2{
+    background-position: -80px 0;
+    width: 77px;
+    margin-left: 120px;
+}
+.icon3{
+    background-position: -155px 0;
+    width: 77px;
+    margin-left: 120px;
+}
+.portfolio{
+    background-color: rgb(247, 247, 247);
+}
+.img1{
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6{
+    display: inline-block;
+    vertical-align: top;
+}
+.pic1, .pic4{
+    margin-right: 34px;
+}
+.pic3, .pic6{
+    margin-left: 34px;
+}
+.six-pictures {
+    max-width: 940px;
+    font-size: 0;
+    margin: 0 auto;
+    padding: 80px 0 120px 0;
+}
+.text{
+    text-align: center;
+    padding: 28px 0 30px 0;
+    background-color: white;
+}
+.p1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    font-size: 18px;
+    line-height: 0;
+}
+.p2{
+    font-family: 'Vollkorn', sans-serif;
+    color: rgb(119, 119, 119);
+    font-size: 17px;
+    line-height: 0;
+}
+.pic1, .pic2, .pic3{
+    padding-bottom: 51px;
+}
+.timeline{
+    max-width: 940px;
+    padding-top: 82px;
+    text-align: center;
+    margin: 0 250px 0 230px
+}
+.about-us{
+    padding-bottom: 120px;
+}
+.about{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-1{
+    background: url('http://i.cubeupload.com/zBLa1W.jpg') no-repeat center;
+    background-size: contain;
+    height: 183px;
+
+}
+.text-2{
+     background: url('http://i.cubeupload.com/QEOeVz.jpg') no-repeat center;
+     background-size: contain;
+     height: 183px;
+
+ }
+.text-3{
+    background: url('http://i.cubeupload.com/Vkr7J4.jpg') no-repeat center;
+    background-size: contain;
+    height: 183px;
+
+}
+.text-4{
+    background: url('http://i.cubeupload.com/sa47Br.jpg') no-repeat center;
+    background-size: contain;
+    height: 183px;
+
+}
+
+.text-5{
+    background: url('http://i.cubeupload.com/uw7Y3g.jpg') no-repeat center;
+    background-size: contain;
+    height: 183px;
+
+}
+.line {
+    background: url('http://i.cubeupload.com/FuW8iQ.png') no-repeat center;
+    height: 94px;
+    margin: 0;
+    padding: 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.caption-h3-right, .caption-p-right, .caption-h3-right1{
+    text-align: right;
+}
+.caption-h3-left, .caption-p-left, .caption-h3-left1{
+    text-align: left;
+}
+.caption-h3-right1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    font-size: 18px;
+    line-height: 0;
+}
+.caption-h3-right{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    font-size: 18px;
+}
+.caption-p-right{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    letter-spacing: 0;
+}
+.caption-h3-left1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    font-size: 18px;
+    line-height: 0;
+}
+.caption-h3-left{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    font-size: 18px;
+}
+.caption-p-left{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    letter-spacing: 0;
+}
+.caption-h3-center p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 40px;
+    line-height: 1.5;
+}
+.texts {
+    display: block;
+    width: 40%;
+    padding-right: 30px;
+    padding-left: 25px;
+    vertical-align: top;
+    margin-top: -15px;
+    line-height: 1.5;
+}
+
+.team{
+    display: block;
+    text-align: center;
+    padding: 95px 0 120px 0;
+    background-color: rgb(249, 249, 249);
+}
+.amazing-team{
+    margin-right: 20px;
+}
+.team-members{
+    text-align: center;
+    max-width: 940px;
+    font-size: 0;
+    margin: 0 auto;
+    padding: 65px 0 0 0;
+}
+
+.links1, .links2, .links3{
+    text-align: center;
+    margin-top: -32px;
+}
+.member1, .member2, .member3{
+
+    display: inline-block;
+    width: 33.33%;
+    vertical-align: top;
+    text-align: center;
+
+}
+.member1 .img2 {
+    margin-left: 50px;
+}
+.member2 .img3 {
+    margin-right: 12px;
+}
+.member3 .img4{
+    margin-right: 100px;
+
+}
+
+.twitter, .facebook, .pinterest, .google{
+   display: inline-block;
+    width: 41px;
+    height: 41px;
+    padding: 25px;
+}
+.img{
+    width: 41px;
+}
+.name1, .name2, .name3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    font-size: 16px;
+    line-height: 0;
+    margin-top: 27px;
+
+
+}
+.position1, .position2, .position3{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    letter-spacing: 0;
+}
+.name1, .position1{
+    margin-left: 60px;
+}
+.name2, .position2{
+    margin-right: 3px;
+}
+.name3, .position3{
+    margin-right: 70px;
+}
+.links1{
+    margin-left: 15px;
+}
+
+.links2{
+    margin-right: 50px;
+}
+
+.links3{
+    margin-right: 120px;
+}
+
+.text-6{
+    max-width: 650px;
+    text-align: center;
+    margin: 45px 0 0 150px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 16px;
+    color: rgb(119, 119, 119);
+    letter-spacing: 0;
+    line-height: 1.5;
+
+}
+.company{
+    max-width: 940px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 55px 0 60px 0;
+
+
+}
+.brand1, .brand2, .brand3, .brand4 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.brand1{
+    padding-right: 20px;
+}
+.brand2{
+    padding-left: 40px;
+}
+.brand3, .brand4{
+    padding-left: 30px;
+}
+.contact-us{
+    position: relative;
+}
+
+.background-contact{
+    width: 100%;
+    height: 100%;
+    background: url("http://i.cubeupload.com/4tlQrn.jpg") no-repeat top/cover;
+}
