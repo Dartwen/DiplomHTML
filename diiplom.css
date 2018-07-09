@@ -1,36 +1,59 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
-    max-width: 1400px;
+
+html {
+    min-height: 940px;
+}
+
+body {
+
+    min-width: 940px;
     font-size: 10px;
     font-weight: normal;
     margin: 0;
     padding: 0;
+
 }
-.diploma-lending{
+
+.diploma-lending {
     position: relative;
     min-height: 100%;
-    height: auto;
 }
-.background{
+
+.background {
     width: 100%;
+    height: 100%;
     background: url(http://i.cubeupload.com/MFK4ei.jpg) no-repeat left top/cover;
+    min-height: 100%;
+
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    display: block;
     height: auto;
-    max-width: 1400px;
-
+    width: 940px;
+    margin: 0 auto;
 }
-.header{
+
+.wrapper {
+    display: block;
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 120px 0 120px 0;
     font-size: 0;
-    padding-top: 40px;
-    }
+}
+
+.header {
+    font-size: 0;
+    padding-top: 35px;
+}
+
 .logo {
     display: inline-block;
     width: 20%;
@@ -43,84 +66,126 @@ header {
     font-weight: normal;
     font-size: 360%;
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-family: 'Cookie', sans-serif;
-    margin-left: 15px;
+    margin-left: 12px;
+
+    text-shadow: 1px 1px 1px rgba(254, 209, 54, 0.5),
+    -1px 1px 1px rgba(254, 209, 54, 0.5);
+    transition: all .5s;
 }
 
-.logo1 span {
+.logo1:hover {
+    text-shadow: -2px -2px 2px rgba(254, 209, 54, 0.5),
+    2px -2px 2px rgba(254, 209, 54, 0.5);
+}
+
+.golden {
     font-size: 100%;
-    color: rgb(254, 209, 54);
+    color: rgba(254, 209, 54, 1);
 
 }
 
-nav {
+.navigation {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
     width: 80%;
-    text-align: right;
     font-size: 10px;
     vertical-align: middle;
-
+    margin-top: 10px;
 
 }
 
-nav ul {
+.navigation-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: right;
 
 }
 
-nav ul li {
+.item {
     display: inline-block;
 
 }
 
-nav ul li .menu {
-    font-size: 140%;
+.menu{
+    font-size: 14px;
     color: rgba(255, 255, 255, 0.8);
     margin-left: 41px;
     text-decoration: none;
     text-transform: uppercase;
+    vertical-align: middle;
 
 }
-.header, .information, .service, .about-us{
+
+.item:after {
+    height: 2px; /* Толщина линии подчеркивания */
+    display: block;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.8); /* Цвет линии подчеркивания */
+    margin-top: 2px;
+    width: 0;
+    transition: width .2s ease-in-out; /* Скорость появления/исчезновения линии */
+    margin-left: 41px;
+}
+
+.item:nth-child(1):hover:after,.item:nth-child(1):focus:after {
+    width: 55%;
+    margin-left: 41px;
+}
+
+.item:nth-child(2):hover:after,.item:nth-child(2):focus:after {
+    width: 65%;
+    margin-left: 41px;
+}
+
+.item:nth-child(3):hover:after,.item:nth-child(3):focus:after {
+    width: 68%;
+    margin-left: 41px;
+}
+
+.item:nth-child(4):hover:after,.item:nth-child(4):focus:after {
+    width: 55%;
+    margin-left: 41px;
+}
+
+.item:nth-child(5):hover:after,.item:nth-child(5):focus:after {
+    width: 63%;
+    margin-left: 41px;
+}
+
+.information {
     display: block;
     max-width: 940px;
+    font-size: 10px;
     margin: auto;
     width: auto;
-}
-.information {
-    padding-top: 210px;
-    padding-bottom: 170px;
-    margin-left: 247px;
-    font-size: 10px;
     text-align: center;
+    padding: 150px 0 181px 0;
 }
 
-.information h1 {
+.welcome {
     font-size: 450%;
     font-family: 'Vollkorn', sans-serif;
     color: white;
-    margin-bottom: -62px;
-    margin-left: -75px;
+    letter-spacing: 1px;
+    line-height: 1;
+
 }
 
-.information p{
+.meet{
     font-family: 'Montserrat', sans-serif;
     font-size: 750%;
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    margin-right: 70px;
     letter-spacing: -3px;
-    margin-bottom: 55px;
-
-
+    line-height: 0;
+    margin-bottom: 105px;
 }
 
-.information .button {
+.button {
     font-size: 180%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -129,8 +194,7 @@ nav ul li .menu {
     text-transform: uppercase;
     border-radius: 3px;
     background: rgb(254, 209, 54);
-    padding: 25px 49px 27px 49px;
-    margin-right: 90px;
+    padding: 20px 49px 23px 49px;
 
 }
 
@@ -142,235 +206,255 @@ nav ul li .menu {
     background: rgb(254, 209, 54);
 }
 
-.service, .portfolio, .about-us{
-    max-width: 1400px;
-    padding-top: 120px;
-    text-align: center;
-    font-size: 10px;
-}
-.h3caption{
+.h3caption {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: rgb(34, 34, 34);
-    font-size: 400%;
-    line-height: 0;
-    letter-spacing: -3px;
-    margin-bottom: 45px;
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 0;
 
 }
-.p-caption{
+
+.p-caption {
     font-family: 'Vollkorn', sans-serif;
     color: rgb(119, 119, 119);
-    font-size: 200%;
+    font-size: 20px;
     line-height: 0;
+    margin-top: -20px;
 
 }
-.three-pictures{
-    text-align: center;
-    max-width: 940px;
+
+.three-pictures, .six-pictures {
+    max-width: 100%;
     font-size: 0;
-    margin: 0 auto;
-    padding: 80px 0 120px 0;
+    margin-top: 80px;
+    text-align: center;
+
 }
 
-.picture1, .picture2, .picture3 {
+.picture {
     display: inline-block;
     width: 33.33%;
-    vertical-align: top;
     text-align: center;
+
 }
 
-.picture1 h3, .picture2 h3, .picture3 h3 {
-    font-family: 'Roboto Slab', sans-serif;
+.name-h3 {
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 18px;
     color: rgb(34, 34, 34);
     letter-spacing: 0;
+    margin-top: 23px;
 }
-.picture1 p, .picture2 p, .picture3 p{
-    font-family: 'Montserrat', sans-serif;
+
+.paragraph-p{
+    font-family: 'Roboto Slab', sans-serif;
     letter-spacing: 0;
-    padding: 0 25px 0 25px;
-    font-size: 12px;
-    line-height:  1.5;
+    padding: 0 7px 0 7px;
+    font-size: 14px;
+    line-height: 1.5;
     color: rgb(119, 119, 119);
+    margin: 15px 0 0 0;
 }
-.icon{
+
+.icon {
     display: block;
-    min-height: 100%;
-    min-width: 100%;
-    max-width: 100%;
     height: 73px;
-    background: url(http://i.cubeupload.com/sIKDjw.png) no-repeat;
-  }
-.icon1{
+    background: url("http://i.cubeupload.com/2mcJVP.png") no-repeat;
+}
+
+.icon1 {
     background-position: 0 0;
     width: 77px;
     margin-left: 120px;
 }
-.icon2{
+
+.icon2 {
     background-position: -80px 0;
     width: 77px;
     margin-left: 120px;
 }
-.icon3{
+
+.icon3 {
     background-position: -155px 0;
     width: 77px;
     margin-left: 120px;
 }
-.portfolio{
+
+.portfolio {
     background-color: rgb(247, 247, 247);
 }
-.img1{
+
+.our-portfolio {
+    margin-top: -5px;
+}
+
+.img1 {
     min-height: 100%;
     min-width: 100%;
     max-width: 100%;
     display: block;
     overflow: hidden;
 }
-.pic1, .pic2, .pic3, .pic4, .pic5, .pic6{
+
+.pic {
     display: inline-block;
-    vertical-align: top;
+    text-align: center;
 }
-.pic1, .pic4{
+
+.text-url {
+    text-decoration: none;
+}
+
+.threed:hover {
+    box-shadow: 1px 1px #53a7ea,
+    2px 2px #53a7ea,
+    3px 3px #53a7ea;
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px);
+}
+
+.pic:nth-child(1), .pic:nth-child(4) {
     margin-right: 34px;
 }
-.pic3, .pic6{
+
+.pic:nth-child(3), .pic:nth-child(6) {
     margin-left: 34px;
 }
-.six-pictures {
-    max-width: 940px;
-    font-size: 0;
-    margin: 0 auto;
-    padding: 80px 0 120px 0;
+
+.pic:nth-child(4), .pic:nth-child(5), .pic:nth-child(6) {
+    padding-top: 50px;
 }
-.text{
+
+.text {
     text-align: center;
-    padding: 28px 0 30px 0;
+    padding: 12px 0 15px 0;
     background-color: white;
 }
-.p1{
+
+.p1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: rgb(34, 34, 34);
     font-size: 18px;
-    line-height: 0;
+    line-height: 0.60;
 }
-.p2{
+
+.p2 {
     font-family: 'Vollkorn', sans-serif;
     color: rgb(119, 119, 119);
     font-size: 17px;
     line-height: 0;
 }
-.pic1, .pic2, .pic3{
-    padding-bottom: 51px;
-}
-.timeline{
-    max-width: 940px;
-    padding-top: 82px;
-    text-align: center;
-    margin: 0 250px 0 230px
-}
-.about-us{
-    padding-bottom: 120px;
-}
-.about{
-    text-align: center;
-    margin: 0 auto;
+
+.timeline {
+    padding-top: 68px;
+    position: relative;
+    z-index: 100;
 }
 
-.text-1{
+.text-1 {
     background: url('http://i.cubeupload.com/zBLa1W.jpg') no-repeat center;
     background-size: contain;
     height: 183px;
-
+    margin-bottom: 94px;
 }
-.text-2{
-     background: url('http://i.cubeupload.com/QEOeVz.jpg') no-repeat center;
-     background-size: contain;
-     height: 183px;
 
- }
-.text-3{
+.text-2 {
+    background: url('http://i.cubeupload.com/QEOeVz.jpg') no-repeat center;
+    background-size: contain;
+    height: 183px;
+    margin-bottom: 94px;
+}
+
+.text-3 {
     background: url('http://i.cubeupload.com/Vkr7J4.jpg') no-repeat center;
     background-size: contain;
     height: 183px;
+    margin-bottom: 89px;
 
 }
-.text-4{
+
+.text-4 {
     background: url('http://i.cubeupload.com/sa47Br.jpg') no-repeat center;
     background-size: contain;
     height: 183px;
+    margin-bottom: 89px;
 
 }
 
-.text-5{
+.text-5 {
     background: url('http://i.cubeupload.com/uw7Y3g.jpg') no-repeat center;
     background-size: contain;
     height: 183px;
+    margin: 0 auto;
+    width: 200px;
 
 }
-.line {
-    background: url('http://i.cubeupload.com/FuW8iQ.png') no-repeat center;
-    height: 94px;
-    margin: 0;
-    padding: 0;
+
+.our-story {
+    text-decoration: none;
 }
-.left{
+
+.timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: auto;
+    top: 120px;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    background-color: #f1f1f1;
+    z-index: -1;
+}
+
+.left {
     float: left;
 }
-.right{
+
+.right {
     float: right;
 }
 
-.caption-h3-right, .caption-p-right, .caption-h3-right1{
+.text-1, .text-3 {
     text-align: right;
 }
-.caption-h3-left, .caption-p-left, .caption-h3-left1{
+
+.text-2, .text-4 {
     text-align: left;
 }
-.caption-h3-right1{
+
+.caption-h31 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: rgb(34, 34, 34);
     font-size: 18px;
-    line-height: 0;
+    line-height: 0.7;
 }
-.caption-h3-right{
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: rgb(34, 34, 34);
-    font-size: 18px;
-}
-.caption-p-right{
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 14px;
-    color: rgb(119, 119, 119);
-    letter-spacing: 0;
-}
-.caption-h3-left1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: rgb(34, 34, 34);
-    font-size: 18px;
-    line-height: 0;
-}
-.caption-h3-left{
+
+.caption-h3 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: rgb(34, 34, 34);
     font-size: 18px;
+    line-height: 0.7;
 }
-.caption-p-left{
+
+.caption-p {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 14px;
     color: rgb(119, 119, 119);
     letter-spacing: 0;
+    line-height: 1.6;
 }
-.caption-h3-center p{
+
+.story {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -380,106 +464,83 @@ nav ul li .menu {
     padding: 40px;
     line-height: 1.5;
 }
+
 .texts {
     display: block;
     width: 40%;
-    padding-right: 30px;
-    padding-left: 25px;
+    padding-right: 42px;
+    padding-left: 42px;
     vertical-align: top;
     margin-top: -15px;
     line-height: 1.5;
 }
 
-.team{
-    display: block;
-    text-align: center;
-    padding: 95px 0 120px 0;
+.team {
     background-color: rgb(249, 249, 249);
 }
-.amazing-team{
-    margin-right: 20px;
-}
-.team-members{
-    text-align: center;
-    max-width: 940px;
-    font-size: 0;
-    margin: 0 auto;
-    padding: 65px 0 0 0;
+
+.h3team {
+    letter-spacing: -3px;
 }
 
-.links1, .links2, .links3{
+.team-members {
+
+    display: inline-block;
+    vertical-align: top;
     text-align: center;
-    margin-top: -32px;
+    margin-top: 69px;
 }
-.member1, .member2, .member3{
+
+.links {
+    margin-top: 0;
+
+}
+
+.member {
 
     display: inline-block;
     width: 33.33%;
-    vertical-align: top;
-    text-align: center;
-
-}
-.member1 .img2 {
-    margin-left: 50px;
-}
-.member2 .img3 {
-    margin-right: 12px;
-}
-.member3 .img4{
-    margin-right: 100px;
+    padding: 0 24px 0 24px;
 
 }
 
-.twitter, .facebook, .pinterest, .google{
-   display: inline-block;
+.tw, .fb, .pt, .gl {
+    display: inline-block;
     width: 41px;
     height: 41px;
-    padding: 25px;
+    margin-top: 5px;
 }
-.img{
+
+.links .pt {
+    margin: 0;
+}
+
+.img {
     width: 41px;
 }
-.name1, .name2, .name3{
+
+.name {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: rgb(34, 34, 34);
     font-size: 16px;
-    line-height: 0;
-    margin-top: 27px;
-
+    line-height: 1;
 
 }
-.position1, .position2, .position3{
+
+.position {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 14px;
     color: rgb(119, 119, 119);
     letter-spacing: 0;
-}
-.name1, .position1{
-    margin-left: 60px;
-}
-.name2, .position2{
-    margin-right: 3px;
-}
-.name3, .position3{
-    margin-right: 70px;
-}
-.links1{
-    margin-left: 15px;
+    line-height: 0;
 }
 
-.links2{
-    margin-right: 50px;
-}
-
-.links3{
-    margin-right: 120px;
-}
-
-.text-6{
+.text-6 {
     max-width: 650px;
     text-align: center;
-    margin: 45px 0 0 150px;
+    margin: 0 auto;
+    padding-top: 45px;
     font-family: 'Roboto Slab', sans-serif;
     font-size: 16px;
     color: rgb(119, 119, 119);
@@ -487,33 +548,203 @@ nav ul li .menu {
     line-height: 1.5;
 
 }
-.company{
-    max-width: 940px;
+
+.company {
+    width: 940px;
     text-align: center;
     margin: 0 auto;
     padding: 55px 0 60px 0;
 
+}
+
+.brand {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 45px;
+    position: relative;
 
 }
-.brand1, .brand2, .brand3, .brand4 {
+
+.envitro, .wordpress, .tuts, .microlancer {
+    min-height: 100%;
+    min-width: 100%;
+
+}
+
+.brand:nth-child(1), .brand:nth-child(2) {
+    left: 25px;
+}
+
+.brand:nth-child(3) {
+    left: 15px;
+}
+
+.brand:nth-child(4) {
+    left: 10px;
+}
+
+.contact-us {
+    width: 100%;
+    height: 100%;
+    background: url("http://i.cubeupload.com/4tlQrn.jpg") no-repeat left top/cover;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.wrapper-us {
+    width: 940px;
+    margin: 0 auto;
+    padding: 110px 0 137px 0;
+    font-size: 0;
+}
+
+.contact-caption {
+    text-align: center;
+}
+
+.capcolor {
+    color: white;
+
+}
+
+.data, .message {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 65px;
+    font-size: 0;
+
+}
+
+.data-entry {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 700;
+    height: 50px;
+    width: 455px;
+    margin-bottom: 30px;
+    text-indent: 17px;
+    padding-right: 15px;
+}
+
+.message {
+    margin-left: 30px;
+}
+
+
+
+.your-message {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: rgba(119, 119, 119, 1);
+    font-size: 14px;
+    font-weight: 700;
+    height: 210px;
+    width: 455px;
+    padding-top: 15px;
+    padding-right: 17px;
+    padding-left: 17px;
+    resize: none;
+    border-radius: 5px;
+
+}
+
+.button-contact {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 240px;
+}
+
+.contact-button {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background: rgb(254, 209, 54);
+    padding: 20px 45px 22px 45px;
+}
+
+.contact-button:hover {
+    background: rgb(254, 239, 84);
+}
+
+.contact-button:active {
+    background: rgb(254, 209, 54);
+}
+
+.footer {
+    height: 90px;
+    width: 940px;
+
+}
+
+.superfooter {
+    padding-top: 18px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copyright {
     display: inline-block;
     vertical-align: middle;
 }
-.brand1{
-    padding-right: 20px;
-}
-.brand2{
-    padding-left: 40px;
-}
-.brand3, .brand4{
-    padding-left: 30px;
-}
-.contact-us{
-    position: relative;
+
+.copy {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    font-weight: 700;
 }
 
-.background-contact{
-    width: 100%;
-    height: 100%;
-    background: url("http://i.cubeupload.com/4tlQrn.jpg") no-repeat top/cover;
+.links4 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 130px;
+
+}
+
+.tw, .fb, .pt, .gl {
+    text-decoration: none;
+    margin-right: 7px;
+}
+
+.gl {
+    margin: 0;
+}
+
+.rotate:hover {
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+}
+
+.twitter1, .facebook1, .pinterest1, .google1 {
+    text-decoration: none;
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+}
+
+.grow {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
 }
